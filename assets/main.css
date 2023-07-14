@@ -11,18 +11,23 @@ html, body {
   overflow: hidden;
 }
 
-.reveal:hover .content {
-clip-path: circle(50% at center); /* Adjust the circle size as desired */
+.reveal.hovered .content {
+  clip-path: circle(50% at center); /* Adjust the circle size as desired */
 }
 
 .content {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('Computer_Circuit_Board_Skelton.svg');
+  height: 100%;
+  width: 100%;
+  background-image: url('images/svg/Computer_Circuit_Board_Skelton.svg');
   background-position: center;
   background-size: 500%;
   overflow: hidden;
+}
+
+.content.animate {
   clip-path: circle(0% at center); /* Start with no visible content */
   transition: clip-path 0.3s ease; /* Add a transition effect for smooth animation */
 }
