@@ -1,4 +1,4 @@
-function moveContent(event, mvElement, parentElement) {
+function move_content(event, mvElement, parentElement) {
   const parentRect = parentElement.getBoundingClientRect();
   const mouseX = event.clientX - parentRect.left;
   const mouseY = event.clientY - parentRect.top;
@@ -22,7 +22,7 @@ function moveContent(event, mvElement, parentElement) {
   mvElement.style.backgroundPosition = `${bgPosX} ${bgPosY}`;
 }
 
-function animateBg(bgElement, parentElement, moveResponse) {
+function animate_bg(bgElement, parentElement, moveResponse) {
   bgElement.style.width = 0;
   bgElement.style.height = 0;
   bgElement.classList.add('animate');
