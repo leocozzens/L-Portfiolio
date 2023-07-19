@@ -1,9 +1,14 @@
+/* Fonts: */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur:wght@700&display=swap');
+
+/* Base elements */
 html, body {
   background-color: #111116;
   margin: 0;
   padding: 0;
 }
 
+/* Class/ID's relative to html structure */
 .reveal {
   position: relative;
   width: 100vw;
@@ -30,4 +35,48 @@ html, body {
 .content.animate {
   clip-path: circle(0% at center); /* Start with no visible content */
   transition: clip-path 0.3s ease; /* Add a transition effect for smooth animation */
+}
+
+#sidebarBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  min-height: 100vh;
+  min-width: 40vw;
+  background-color: #121212;
+}
+
+.nameContainer {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.name {
+  text-align: center;
+  font-size: 80px;
+  line-height: 25px;
+  color: white;
+  font-family: 'Tektur', cursive;
+}
+
+#tag {
+  color: grey;
+  font-size: .3em;
+}
+
+.social {
+  position: relative;
+  top: -50px;
+  left: 25%;
+  width: 30px;
+  padding-right: 10px;
+  transform: translate(-50%, -50%);
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
 }

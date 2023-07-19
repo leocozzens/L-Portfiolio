@@ -1,4 +1,4 @@
-const isMobile = navigator.userAgentData.mobile;
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 const parent = document.querySelector('.reveal');
 const content = document.querySelector('.content');
