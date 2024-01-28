@@ -1,14 +1,12 @@
 /* Fonts: */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur:wght@700&display=swap');
 
-/* Base elements */
 html, body {
   background-color: #111116;
   margin: 0;
   padding: 0;
 }
 
-/* Class/ID's relative to html structure */
 .reveal {
   position: relative;
   width: 100vw;
@@ -26,7 +24,7 @@ html, body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url('images/svg/Computer_Circuit_Board_Skelton.svg');
+  background-image: url('../assets/images/svg/Computer_Circuit_Board_Skelton.svg');
   background-position: center;
   background-size: 500%;
   overflow: hidden;
