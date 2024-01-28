@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur:wght@700&display=swap');
 
 html, body {
-  background-color: #111116;
+  background-color: #212121;
   margin: 0;
   padding: 0;
 }
@@ -52,7 +52,7 @@ a:active {
   position: absolute;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 350px;
   min-height: 100vh;
   min-width: 40vw;
   background-color: #121212;
