@@ -1,3 +1,5 @@
+const bubbleColor = "#111116";
+
 function move_content(event, mvElement, parentElement) {
   const parentRect = parentElement.getBoundingClientRect();
   const mouseX = event.clientX - parentRect.left;
@@ -12,8 +14,8 @@ function move_content(event, mvElement, parentElement) {
   mvElement.style.width = contentSize + 'px';
   mvElement.style.height = contentSize + 'px';
   mvElement.style.borderRadius = contentRadius + 'px';
-  mvElement.style.boxShadow = '0 0 100px 90px #111116 inset';
-  mvElement.style.outline = '3px solid #111116';
+  mvElement.style.boxShadow = '0 0 100px 90px ' + bubbleColor + ' inset';
+  mvElement.style.outline = '3px solid ' + bubbleColor;
   mvElement.style.outlineOffset = '-2px';
   mvElement.style.transform = `translate(${contentX}px, ${contentY}px)`;
 

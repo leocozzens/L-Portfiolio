@@ -1,5 +1,6 @@
-/* Fonts: */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&display=swap');
 
 html, body {
   background-color: #212121;
@@ -7,21 +8,21 @@ html, body {
   padding: 0;
 }
 
-a:link { 
+a:link {
   text-decoration: none; 
 } 
-a:visited { 
+a:visited {
   text-decoration: none; 
 } 
 a:hover { 
   text-decoration: none; 
 } 
-a:active { 
+a:active {
   text-decoration: none; 
 }
 
 .reveal {
-  position: relative;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -32,7 +33,7 @@ a:active {
 }
 
 .content {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -49,12 +50,12 @@ a:active {
 }
 
 #sidebarBg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 350px;
   min-height: 100vh;
-  min-width: 40vw;
+  min-width: 33vw;
   background-color: #121212;
 }
 
@@ -91,4 +92,68 @@ a:active {
   cursor: pointer;
   -webkit-user-drag: none;
   -moz-user-drag: none;
+}
+
+.segment {
+  position: absolute;
+  pointer-events: none;
+  left: 33vw;
+  width: calc(67vw - ((100vw - 100%)));
+  top: 0;
+  opacity: 0.8;
+}
+
+#info {
+  top: 0;
+  height: 38vh;
+  background: linear-gradient(to right, rgb(54, 52, 64) 0%, rgb(54, 52, 64) 33%, rgb(35, 33, 40) 33%, rgb(35, 33, 40) 66%, rgb(14, 13, 16) 66%, rgb(14, 13, 16) 100%);
+}
+
+.infoText {
+  position: absolute;
+  color: white;
+  font-size: large;
+  font-family: 'Unbounded', sans-serif;
+  transform: translate(-50%, 0);
+  width: 20vw;
+  height: 35vh;
+  top: 0;
+  text-align: center;
+}
+
+#bio {
+  left: 11vw;
+}
+
+#qualifications {
+  left: 33vw;
+  top: -.5em;
+  line-height: 2em;
+  font-size: larger;
+}
+
+#skills {
+  left: 55.5vw;
+}
+
+
+/* #docs {
+  top: 30vh;
+  width: 60vw;
+  min-height: 30vh;
+  pointer-events: none;
+  background: linear-gradient(to left, rgb(54, 52, 64) 50%, rgb(35, 33, 40) 50%);
+} */
+
+#index {
+  top: 66vh;
+  width: 60vw;
+  min-height: 30vh;
+  text-align: center;
+}
+
+#indexTitle {
+  color: rgb(68, 233, 34);
+  font-size: xx-large;
+  font-family: 'Unbounded', sans-serif;
 }
